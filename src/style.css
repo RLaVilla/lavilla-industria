@@ -107,20 +107,6 @@ footer p {
   font-weight: 600;
 }
 
-.phoneFlexDiv {
-  display: flex;
-  font-size: 20px;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  font-weight: 350;
-  color: #f8f8f8;
-}
-
-.phoneFlexDiv img {
-  width: 20px;
-}
-
 .mobile-button {
   display: none;
 }
@@ -213,7 +199,7 @@ footer p {
     font-size: 22px;
   }
   header {
-    height: 7vh;
+    height: 7dvh;
   }
 
   .homeContainer img {
@@ -226,7 +212,7 @@ footer p {
   .homeContainer {
     position: relative;
     overflow: hidden;
-    height: 93vh;
+    height: 93dvh;
     justify-content: flex-start;
   }
 
