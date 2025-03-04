@@ -252,6 +252,10 @@ footer p {
     left: 20px;
     font-family: lato;
   }
+
+  html {
+    position: relative;
+  }
 }
 
 @media (max-width: 400px) {
