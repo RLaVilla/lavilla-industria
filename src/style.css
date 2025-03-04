@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: white;
+  --grey: #333333;
+}
+
+html {
+  background-color: var(--white);
+}
+
+header {
+  background-color: var(--white);
+  padding: 25px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header h1 {
+  color: var(--grey);
+  letter-spacing: 1px;
+}
+
+.logIn {
+  padding: 10px 20px;
+  color: var(--white);
+  outline: none;
+  border: none;
+  background: var(--grey);
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  font-size: 16px;
+  border-radius: 3px;
+}
+
+.homeContainer {
+  font-family: lato;
+  padding: 220px 50px 0 50px;
+  margin: auto;
+  position: relative;
+  text-align: right;
+}
+
+.main {
+  letter-spacing: 1px;
+  align-self: flex-start;
+  color: #333333;
+  font-weight: 400;
+  font-size: 22px;
+  width: 70%;
+  position: absolute;
+  text-align: left;
+  line-height: 2;
+}
+
+.homeContainer img {
+  width: 600px;
+  padding-top: 14px;
+}
+
+.mobile-footer {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  font-family: lato;
+  font-size: 12px;
+  text-align: center;
+  font-weight: 500;
+  color: var(--white);
+  padding: 5px;
+  display: none;
+}
+
+footer {
+  background-color: --white;
+  padding: 10px 50px;
+  font-family: lato;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: absolute;
+  bottom: 0;
+  gap: 50px;
+}
+
+footer p {
+  color: var(--grey);
+}
+
+.miami {
+  font-size: 22px;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+.trademark {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.phoneFlexDiv {
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: 350;
+  color: #f8f8f8;
+}
+
+.phoneFlexDiv img {
+  width: 20px;
+}
+
+.mobile-button {
+  display: none;
+}
+
+@media (max-width: 1065px) {
+  .homeContainer {
+    padding: 100px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .main {
+    align-self: center;
+    font-size: 18px;
+    position: static;
+    width: 90%;
+    text-align: justify;
+  }
+
+  .homeContainer img {
+    width: 500px;
+  }
+
+  .miami {
+    font-size: 18px;
+  }
+
+  .trademark {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 700px) {
+  .main {
+    font-size: 16px;
+  }
+
+  .miami {
+    font-size: 16px;
+  }
+
+  .trademark {
+    font-size: 13px;
+  }
+
+  .homeContainer {
+    gap: 40px;
+    padding: 50px;
+  }
+
+  header button {
+    display: none;
+  }
+
+  .mobile-button {
+    display: block;
+  }
+
+  header h1 {
+    font-size: 28px;
+  }
+  .homeContainer img {
+    width: 420px;
+  }
+}
+
+@media (max-width: 600px) {
+  .homeContainer img {
+    width: 400px;
+  }
+
+  .homeContainer {
+    gap: 40px;
+    padding: 50px 20px;
+  }
+
+  header h1 {
+    font-size: 24px;
+  }
+  header {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  header h1 {
+    font-size: 22px;
+  }
+  header {
+    height: 7vh;
+  }
+
+  .homeContainer img {
+    width: 550px;
+    position: absolute;
+    bottom: -50px;
+    overflow: hidden;
+  }
+
+  .homeContainer {
+    position: relative;
+    overflow: hidden;
+    height: 93vh;
+    justify-content: flex-start;
+  }
+
+  .main {
+    padding-top: 5vh;
+    font-size: 15px;
+  }
+
+  footer.web-footer {
+    display: none;
+  }
+
+  footer.mobile-footer {
+    display: block;
+  }
+
+  header h1::after {
+    content: "Miami, FL";
+    font-size: 12px;
+    color: var(--grey);
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    font-family: lato;
+  }
+}
+
+@media (max-width: 400px) {
+  header h1 {
+    font-size: 20px;
+  }
+
+  .homeContainer {
+    padding: 50px 20px;
+  }
+
+  .homeContainer img {
+    width: 450px;
+  }
+}
