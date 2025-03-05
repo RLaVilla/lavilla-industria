@@ -109,6 +109,7 @@ footer p {
 
 .mobile-button {
   display: none;
+  font-size: 13px;
 }
 
 @media (max-width: 1065px) {
@@ -169,7 +170,7 @@ footer p {
   }
 
   header h1 {
-    font-size: 28px;
+    font-size: 30px;
   }
   .homeContainer img {
     width: 420px;
@@ -187,7 +188,7 @@ footer p {
   }
 
   header h1 {
-    font-size: 24px;
+    font-size: 28px;
   }
   header {
     padding: 20px;
@@ -196,7 +197,7 @@ footer p {
 
 @media (max-width: 500px) {
   header h1 {
-    font-size: 22px;
+    font-size: 26px;
   }
   header {
     height: 7dvh;
@@ -231,10 +232,10 @@ footer p {
 
   header h1::after {
     content: "Miami, FL";
-    font-size: 12px;
+    font-size: 13px;
     color: var(--grey);
     position: absolute;
-    top: 50px;
+    top: 56px;
     left: 20px;
     font-family: lato;
   }
@@ -245,10 +246,6 @@ footer p {
 }
 
 @media (max-width: 400px) {
-  header h1 {
-    font-size: 20px;
-  }
-
   .homeContainer {
     padding: 50px 20px;
   }
