@@ -87,8 +87,6 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  position: absolute;
-  bottom: 0;
   gap: 50px;
 }
 
